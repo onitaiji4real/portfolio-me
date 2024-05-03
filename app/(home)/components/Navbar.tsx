@@ -6,7 +6,7 @@ import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 const Navbar = ({ className }: { className?: string }) => {
   const socials = [
     {
-      link: "http://localhost:3000",
+      link: `${process.env.BASE_URL}`,
       label: "Linkedin",
       icon: SiLinkedin,
     },
