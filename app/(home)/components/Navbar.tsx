@@ -1,3 +1,4 @@
+"use client";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
@@ -6,21 +7,22 @@ import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
 const Navbar = ({ className }: { className?: string }) => {
   const socials = [
     {
-      link: `${process.env.BASE_URL}`,
+      link: "/",
       label: "Linkedin",
       icon: SiLinkedin,
     },
     {
-      link: "http://localhost:3000/another",
+      link: "/another",
       label: "Github",
       icon: SiGithub,
     },
     {
-      link: "",
+      link: "/",
       label: "Linkedin",
       icon: SiX,
     },
   ];
+
   return (
     <nav
       className={cn(
