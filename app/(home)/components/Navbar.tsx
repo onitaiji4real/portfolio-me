@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { SiGithub, SiLinkedin, SiX } from "react-icons/si";
+import { FaGlobe } from "react-icons/fa";
 
 const Navbar = ({ className }: { className?: string }) => {
   const socials = [
@@ -17,9 +18,9 @@ const Navbar = ({ className }: { className?: string }) => {
       icon: SiGithub,
     },
     {
-      link: "/",
-      label: "Linkedin",
-      icon: SiX,
+      link: "/globe",
+      label: "globe",
+      icon: FaGlobe,
     },
   ];
 
