@@ -22,6 +22,11 @@ const Navbar = ({ className }: { className?: string }) => {
       label: "globe",
       icon: FaGlobe,
     },
+    {
+      link: "/landing",
+      label: "landing",
+      icon: FaGlobe,
+    },
   ];
 
   return (
