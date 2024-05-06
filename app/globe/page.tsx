@@ -9,6 +9,7 @@ import { issueFetcher } from "@/lib/utils/fetcher";
 import GridAndDotBackground from "@/components/ui/grid-and-dot-background";
 import HeroSection from "../(home)/components/HeroSection";
 import IntroduceCard from "@/components/IntroduceCard";
+import { GithubGlobeModal } from "./components/GithubGlobeModal";
 
 export default function Page() {
   interface Issue {
@@ -29,7 +30,12 @@ export default function Page() {
           <div className=" flex justify-center items-center text-3xl">
             GLOBE PAGE
           </div>
-          <IntroduceCard />
+          <div className=" flex justify-between items-center">
+            <IntroduceCard />
+            <div className=" size-100">
+              <GithubGlobeModal />
+            </div>
+          </div>
         </div>
         <div className="h-10 xl:h-32  bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full"></div>
       </GridAndDotBackground>
