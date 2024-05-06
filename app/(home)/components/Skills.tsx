@@ -2,54 +2,49 @@
 import React from "react";
 import Title from "./Title";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import { SiReact } from "react-icons/si";
+import {
+  SiMysql,
+  SiNextdotjs,
+  SiPhp,
+  SiReact,
+  SiTypescript,
+} from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 
 export default function Skills() {
   const skills = [
     {
-      text: "React",
-      Icon: SiReact,
+      text: "TypeScript",
+      Icon: SiTypescript,
     },
     {
       text: "React",
       Icon: SiReact,
     },
     {
-      text: "React",
-      Icon: SiReact,
+      text: "Next.Js",
+      Icon: SiNextdotjs,
     },
     {
-      text: "React",
-      Icon: SiReact,
+      text: "Java",
+      Icon: FaJava,
     },
     {
-      text: "React",
-      Icon: SiReact,
+      text: "MySQL",
+      Icon: SiMysql,
     },
     {
-      text: "React",
-      Icon: SiReact,
-    },
-    {
-      text: "React",
-      Icon: SiReact,
-    },
-    {
-      text: "React",
-      Icon: SiReact,
-    },
-    {
-      text: "React",
-      Icon: SiReact,
+      text: "PHP",
+      Icon: SiPhp,
     },
   ];
   return (
-    <div className=" max-w-5xl mx-auto px-8 animate-move-up">
+    <div className=" max-w-5xl mx-auto px-8 animate-move-up ">
       <Title
         text="Skills 🛠️"
-        className="flex flex-col items-center justify-center -rotate-6"
+        className="flex flex-col items-center justify-center -rotate-6 "
       />
-      <HoverEffect items={skills} />
+      <HoverEffect items={skills} className="cursor-default" />
     </div>
   );
 }
