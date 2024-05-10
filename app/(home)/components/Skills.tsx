@@ -42,23 +42,10 @@ export default function Skills({ className }: { className?: string }) {
   ];
   return (
     <>
-      <Link
-        to="skillsAnchor"
-        smooth={true}
-        duration={500}
-        className="cursor-pointer"
-      >
-        <div
-          className={cn("max-w-5xl mx-auto px-8 animate-move-up", className)}
-        >
-          <Title
-            text="Skills 🛠️"
-            className="flex flex-col items-center justify-center -rotate-6 "
-          />
-          <Element name="skillsAnchor" />
-          <HoverEffect items={skills} className="cursor-default" />
-        </div>
-      </Link>
+      <div className={cn("max-w-5xl mx-auto px-8 animate-move-up", className)}>
+        <Title text="Skills 🛠️" underLineRotate={"left"} />
+        <HoverEffect items={skills} className="cursor-default" />
+      </div>
     </>
   );
 }
