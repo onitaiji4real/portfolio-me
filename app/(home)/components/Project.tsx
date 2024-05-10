@@ -15,52 +15,49 @@ export default function Project() {
     {
       title: "WMS",
       tech: [SiNextdotjs, SiReactquery, SiMysql, SiTailwindcss],
-      link: "http://localhost:3000",
+      link: "/",
       cover: "/project-1.png",
       background: "bg-indigo-500",
     },
     {
       title: "WMS",
       tech: [SiNextdotjs, SiReactquery, SiMysql, SiTailwindcss],
-      link: "http://localhost:3000",
+      link: "/",
       cover: "/project-1.png",
       background: "bg-green-500",
     },
     {
       title: "WMS",
       tech: [SiNextdotjs, SiReactquery, SiMysql, SiTailwindcss],
-      link: "http://localhost:3000",
+      link: "/",
       cover: "/project-1.png",
       background: "bg-green-500",
     },
     {
       title: "WMS",
       tech: [SiNextdotjs, SiReactquery, SiMysql, SiTailwindcss],
-      link: "http://localhost:3000",
+      link: "/",
       cover: "/project-1.png",
       background: "bg-indigo-500",
     },
     {
       title: "WMS",
       tech: [SiNextdotjs, SiReactquery, SiMysql, SiTailwindcss],
-      link: "http://localhost:3000",
+      link: "/",
       cover: "/project-1.png",
       background: "bg-indigo-500",
     },
     {
       title: "WMS",
       tech: [SiNextdotjs, SiReactquery, SiMysql, SiTailwindcss],
-      link: "http://localhost:3000",
+      link: "/",
       cover: "/project-1.png",
       background: "bg-green-500",
     },
   ];
   return (
     <div className="py-10 p-5 sm:p-0">
-      <Title
-        text="Projects 📚"
-        className="flex flex-col items-center justify-center rotate-6"
-      />
+      <Title text="Projects 📚" underLineRotate={"right"} />
       <div className="grid grid-col-1 sm:grid-cols-2 pt-20 gap-7">
         {projects.map((project, idx) => {
           return (
