@@ -1,15 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
-import Navbar from "../(home)/components/Navbar";
-import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
-import TheHeader from "@/components/Layout/TheHeader";
-import useSWR from "swr";
-import axios from "axios";
-import { issueFetcher } from "@/lib/utils/fetcher";
+import React from "react";
 import GridAndDotBackground from "@/components/ui/grid-and-dot-background";
-import HeroSection from "../(home)/components/HeroSection";
-import IntroduceCard from "@/components/IntroduceCard";
 import Skills from "../(home)/components/Skills";
+import About from "./components/About";
+import TheHeader from "@/components/Layout/TheHeader";
+import IntroduceCard from "@/components/IntroduceCard";
 
 export default function Page() {
   interface Issue {
@@ -17,11 +12,8 @@ export default function Page() {
     title: string;
     body: string;
   }
-
   // const url = "https://api.github.com/repos/onitaiji4real/blog-pages-db/issues";
-
   // const { data, error, isLoading } = useSWR<Issue[]>(url, issueFetcher);
-
   return (
     <>
       <GridAndDotBackground className=" min-h-[90vh]">
@@ -30,16 +22,13 @@ export default function Page() {
           <div className=" flex justify-center items-center text-3xl">
             Landing PAGE
           </div>
-
           <div className=" pt-52 flex justify-between items-center">
             <IntroduceCard />
-            {/* <div className=" size-100"></div> */}
           </div>
-          {/* <div className=" min-h-[vh]"></div> */}
         </div>
-        {/* <div className="h-10 xl:h-32  bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full"></div> */}
       </GridAndDotBackground>
-      <Skills className="" />
+      <Skills />
+      <About />
     </>
   );
 }
