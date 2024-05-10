@@ -2,6 +2,7 @@
 import React from "react";
 import Title from "./Title";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { Link, Element } from "react-scroll";
 import {
   SiMysql,
   SiNextdotjs,
@@ -10,8 +11,9 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
+import { cn } from "@/lib/utils";
 
-export default function Skills() {
+export default function Skills({ className }: { className?: string }) {
   const skills = [
     {
       text: "TypeScript",
@@ -39,12 +41,11 @@ export default function Skills() {
     },
   ];
   return (
-    <div className=" max-w-5xl mx-auto px-8 animate-move-up ">
-      <Title
-        text="Skills 🛠️"
-        className="flex flex-col items-center justify-center -rotate-6 "
-      />
-      <HoverEffect items={skills} className="cursor-default" />
-    </div>
+    <>
+      <div className={cn("max-w-5xl mx-auto px-8 animate-move-up", className)}>
+        <Title text="Skills 🛠️" underLineRotate={"left"} />
+        <HoverEffect items={skills} className="cursor-default" />
+      </div>
+    </>
   );
 }

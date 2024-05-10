@@ -1,6 +1,7 @@
 import Title from "@/app/(home)/components/Title";
 import Link from "next/link";
 import React from "react";
+import TextWithUnderLine from "./TextWithUnderLine";
 
 export default function IntroduceCard() {
   const mail = "minecraft8810@gmail.com";
@@ -20,9 +21,14 @@ export default function IntroduceCard() {
             "Based in Taiwan, I'm a Fullstack developer passionate about building a modern web application that users love."
           }
         </p>
-        <Link href={`mailto:${mail}`} className=" inline-block group">
-          <Title text="Contact me 📬" />
-        </Link>
+        {/* <Link href={`mailto:${mail}`} className=" inline-block group"> */}
+        {/* <Title text="Contact me 📬" underLineRotate={false} /> */}
+        {/* </Link> */}
+        <div className=" flex justify-start items-center">
+          <Link href={`mailto:${mail}`} className=" inline-block group">
+            <TextWithUnderLine text="Contact me 📬" />
+          </Link>
+        </div>
       </div>
     </>
   );
