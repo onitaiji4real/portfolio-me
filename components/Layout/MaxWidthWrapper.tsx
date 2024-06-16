@@ -9,7 +9,12 @@ export default function MaxWidthWrapper({
   className?: string;
 }) {
   return (
-    <div className={cn("min-h-screen bg-black overflow-hidden", className)}>
+    <div
+      className={cn(
+        "min-h-screen overflow-hidden max-w-7xl mx-auto p-5",
+        className
+      )}
+    >
       {children}
     </div>
   );

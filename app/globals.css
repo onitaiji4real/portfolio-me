@@ -81,3 +81,35 @@
   border-radius: 50%;
   box-shadow: 0 0 200px 130px #c026d3;
 }
+
+/* 自定義樣式 */
+.swipe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.swipe-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease;
+  width: calc(100% + 60px); /* 加上刪除圖標的寬度 */
+}
+
+.swipe-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fda4af;
+  color: white;
+  width: 40px;
+  height: 100%;
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* 避免刪除圖標收縮 */
+  margin-left: 10px;
+}
+
+.swipe-container:hover .swipe-content {
+  transform: translateX(-60px);
+}
