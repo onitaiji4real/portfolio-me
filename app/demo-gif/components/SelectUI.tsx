@@ -13,7 +13,7 @@ import {
 export function SelectUI() {
   return (
     <Select>
-      <SelectTrigger className="w-[180px] rounded-xl ">
+      <SelectTrigger className="w-[180px] rounded-xl text-teal-500">
         <SelectValue placeholder="" />
       </SelectTrigger>
       <SelectContent>

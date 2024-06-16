@@ -25,9 +25,9 @@ const RecordList = () => {
     <>
       <NavBar />
       <div className="min-h-screen relative">
-        <FaArrowUp className="absolute right-4 top-28 size-5" />
+        <FaArrowUp className="absolute right-4 top-28 size-5 text-teal-500" />
         <Record />
-        <FaArrowDown className="absolute right-4 top-[800px] size-5" />
+        <FaArrowDown className="absolute right-4 top-[800px] size-5 text-teal-500" />
       </div>
     </>
   );
