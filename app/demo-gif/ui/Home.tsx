@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className=" rounded-full bg-teal-500 size-16 flex justify-center items-center overflow-hidden">
         <Link href={"/demo-gif/home"}>
-          <FaHome className="size-10" />
+          <FaHome className="size-10 text-white" />
         </Link>
       </div>
     </>

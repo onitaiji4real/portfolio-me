@@ -43,7 +43,7 @@ export function DatePicker({ time }: DatePickerProps) {
           ) : (
             <span>{`${time ? time : "null"}`}</span>
           )}
-          <CalendarIcon className="mr-2 h-4 w-4" />
+          <CalendarIcon className="mr-2 h-4 w-4 text-teal-500" />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0">
